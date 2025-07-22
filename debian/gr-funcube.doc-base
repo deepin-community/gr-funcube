@@ -1,0 +1,8 @@
+Document: gr-funcube
+Title: SDR Hardware Driver for FunCube Dongle devices
+Author: Volker Schroer, dl1ksv, et al.
+Section: Programming
+
+Format: HTML
+Index: /usr/share/doc/gr-funcube/html/index.html
+Files: /usr/share/doc/gr-funcube/html/*

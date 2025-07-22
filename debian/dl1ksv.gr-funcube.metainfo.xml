@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+  <id>dl1ksv.gr-funcube</id>
+  <metadata_license>GPL-3+</metadata_license>
+  <name>gr-fcdproplus</name>
+  <summary>Funcube Dongle Pro Plus controller for GNU Radio</summary>
+  <description>
+    <p>
+      Support hardware for software radio using the fcdproplus
+      which provides sampled RF IQ data as a USB audio stereo
+      data stream. Control is done over USB HID protocol.
+      Both the Funcube Dongle and Funcube Dongle Pro+ are supported.
+    </p>
+  </description>
+  <provides>
+    <modalias>usb:v04D8pFB56d*, usb:v04D8pFB31d*</modalias>
+  </provides>
+</component>

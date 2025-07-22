@@ -1,22 +1,78 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: template-repository
-Source: https://github.com/deepin-community/template-repository
-
-Files: *
-Copyright: 2023 Tsic404 <liuheng@deepin.org>
-License: GPL-2+
- This package is free software; you can redistribute it and/or modify
- it under the terms of the GNU General Public License as published by
- the Free Software Foundation; either version 2 of the License, or
- (at your option) any later version.
+Upstream-Name: gr-funcube
+Upstream-Contact: https://github.com/dl1ksv/gr-funcube
+Source:
+ git clone https://github.com/dl1ksv/gr-funcube
+ The upstream package source tarball was generated from the version:
+ git archive --format=tar --prefix=gr-funcube-1.0.0.1/  HEAD  | xz > ../../gr-funcube_1.0.0.1.orig.tar.xz
+Comment:
+ Debian packages by A. Maitland Bottoms <bottoms@debian.org>,
  .
- This package is distributed in the hope that it will be useful,
+ Upstream Authors:
+ Copyright 2013 Volker Schroer, DL1KSV
+License: GPL-3+
+
+Files: 50-funcube.rules MANIFEST.md README.md cmake/*
+ examples/* grc/* include/* lib/* python/*
+ .clang-format .gitignore
+Copyright: 2013 Volker Schroer, DL1KSV
+License: GPL-3+
+
+Files: CMakeLists.txt apps/* cmake/cmake_uninstall.cmake.in
+ python/__init__.py docs/* include/funcube/api.h
+Copyright: 2011,2012 Free Software Foundation, Inc.
+Comment: From GNU Radio gr_modtool templates
+License: GPL-3+
+
+Files: debian/*
+Copyright: 2013,2021 A. Maitland Bottoms <bottoms@debian.org>
+License: GPL-3+
+
+Files: cmake/Modules/CMakeParseArgumentsCopy.cmake
+Copyright: 2010 Alexander Neundorf <neundorf@kde.org>
+Comment: copy of CMakeParseArguments.cmake from cmake 2.8.x
+License: Kitware-BSD
+ All rights reserved.
+ .
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ .
+ * Redistributions of source code must retain the above copyright
+   notice, this list of conditions and the following disclaimer.
+ .
+ * Redistributions in binary form must reproduce the above copyright
+   notice, this list of conditions and the following disclaimer in the
+   documentation and/or other materials provided with the distribution.
+ .
+ * Neither the names of Kitware, Inc., the Insight Software Consortium,
+   nor the names of their contributors may be used to endorse or promote
+   products derived from this software without specific prior written
+   permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+ "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+ LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+ A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+ HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+ SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+ LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+ DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+License: GPL-3+
+ GNU Radio is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 3, or (at your option)
+ any later version.
+ .
+ GNU Radio is distributed in the hope that it will be useful,
  but WITHOUT ANY WARRANTY; without even the implied warranty of
  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  GNU General Public License for more details.
  .
- You should have received a copy of the GNU General Public License
- along with this program. If not, see <https://www.gnu.org/licenses/>
- .
- On Debian systems, the complete text of the GNU General
- Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
+ On Debian systems, the complete text of the GNU General Public
+ License (GPL) version 3 can be found in the file
+ '/usr/share/common-licenses/GPL-3'.

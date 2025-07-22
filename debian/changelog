@@ -1,5 +1,203 @@
-template-repository (1.0-1) unstable; urgency=medium
+gr-funcube (3.10.0~rc3-4) unstable; urgency=medium
 
-  * Initial release
+  [ A.Maitland Bottoms ]
+  * clean up after Doxygen (Closes: #1044735)
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+  [ Janitor ]
+  * update Standards-Version to 4.6.2
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository-Browse
+
+ -- A. Maitland Bottoms <bottoms@debian.org>  Sat, 24 Feb 2024 18:15:35 -0500
+
+gr-funcube (3.10.0~rc3-3) unstable; urgency=medium
+
+  * expect some python tests to fail
+
+ -- A. Maitland Bottoms <bottoms@debian.org>  Wed, 19 Jul 2023 23:00:54 -0400
+
+gr-funcube (3.10.0~rc3-2) unstable; urgency=medium
+
+  * upload to unstable
+
+ -- A. Maitland Bottoms <bottoms@debian.org>  Sun, 18 Sep 2022 08:03:00 -0400
+
+gr-funcube (3.10.0~rc3-1) experimental; urgency=medium
+
+  * New upstream release
+  * Go ahead and update library name with soversion
+    for clean upgrade path (Closes: #1018773).
+  * Register gr-funcube HTML documentation with doc-base
+  * patch to ensure CMake library helpers get installed with gnuradio
+  * update Standards-Version to 4.6.1
+  * upload to experimental for ABI bump
+
+ -- A. Maitland Bottoms <bottoms@debian.org>  Sat, 17 Sep 2022 11:18:25 -0400
+
+gr-funcube (3.10.0~rc2-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Fixes FTBFS with gcc 12. (Closes: #1012940)
+  * Remove debian/patches/*, they no longer apply.
+
+ -- Christoph Berg <myon@debian.org>  Sun, 14 Aug 2022 15:06:38 +0200
+
+gr-funcube (1.0.0-3) unstable; urgency=medium
+
+  * update logging (Closes: #1003990)
+
+ -- A. Maitland Bottoms <bottoms@debian.org>  Tue, 18 Jan 2022 20:45:47 -0500
+
+gr-funcube (1.0.0-2) unstable; urgency=medium
+
+  * upload to unstable
+
+ -- A. Maitland Bottoms <bottoms@debian.org>  Sat, 18 Dec 2021 08:03:21 -0500
+
+gr-funcube (1.0.0-1) experimental; urgency=medium
+
+  * New upstream release v1.0.0
+  * [11746ac] Fixing python lib name in tests and setting GR_TEST_PYTHON_DIRS
+  * for gnuradio 3.9
+
+ -- A. Maitland Bottoms <bottoms@debian.org>  Wed, 10 Nov 2021 18:14:09 -0500
+
+gr-fcdproplus (3.8~20190817-3) unstable; urgency=medium
+
+  * depend upon dh-python since python3-dev no longer does
+  * also add depends on liborc-0.4-dev (Closes: #948937)
+    thanks peter!
+
+ -- A. Maitland Bottoms <bottoms@debian.org>  Wed, 15 Jan 2020 00:06:08 -0500
+
+gr-fcdproplus (3.8~20190817-2) unstable; urgency=medium
+
+  * new watch file. Thanks Kali folk! (Closes: #888853)
+  * upload to unstable
+
+ -- A. Maitland Bottoms <bottoms@debian.org>  Wed, 28 Aug 2019 19:08:56 -0400
+
+gr-fcdproplus (3.8~20190817-1) experimental; urgency=medium
+
+  * New upstream 3.8 port
+
+ -- A. Maitland Bottoms <bottoms@debian.org>  Sat, 17 Aug 2019 21:03:19 -0400
+
+gr-fcdproplus (3.7.25.4b6464b-5) unstable; urgency=medium
+
+  * add breaks/replaces line to hint upgrade (Closes: #875875)
+
+ -- A. Maitland Bottoms <bottoms@debian.org>  Sat, 16 Sep 2017 03:25:39 -0400
+
+gr-fcdproplus (3.7.25.4b6464b-4) unstable; urgency=medium
+
+  * install .pc file correctly (Closes: #875436)
+  * install AppStream metainfo.xml file
+
+ -- A. Maitland Bottoms <bottoms@debian.org>  Thu, 14 Sep 2017 17:56:18 -0400
+
+gr-fcdproplus (3.7.25.4b6464b-3) unstable; urgency=medium
+
+  * build with gnuradio 3.7.10
+
+ -- A. Maitland Bottoms <bottoms@debian.org>  Mon, 04 Sep 2017 00:02:30 -0400
+
+gr-fcdproplus (3.7.25.4b6464b-2) unstable; urgency=medium
+
+  * Breaks/Replaces older library packages (Closes: #830754, #830787)
+
+ -- A. Maitland Bottoms <bottoms@debian.org>  Mon, 11 Jul 2016 21:41:09 -0400
+
+gr-fcdproplus (3.7.25.4b6464b-1) unstable; urgency=medium
+
+  * v3.7.2-rc1-6-g4b6464b
+  * build with gnuradio 3.7.10
+
+ -- A. Maitland Bottoms <bottoms@debian.org>  Sat, 09 Jul 2016 17:01:59 -0400
+
+gr-fcdproplus (3.7.24.cf5db38-5) unstable; urgency=medium
+
+  * build with gnuradio 3.7.9
+
+ -- A. Maitland Bottoms <bottoms@debian.org>  Fri, 08 Jan 2016 00:10:43 -0500
+
+gr-fcdproplus (3.7.24.cf5db38-4) unstable; urgency=medium
+
+  * Lintian packaging cleanups
+
+ -- A. Maitland Bottoms <bottoms@debian.org>  Fri, 27 Nov 2015 21:24:48 -0500
+
+gr-fcdproplus (3.7.24.cf5db38-3) unstable; urgency=low
+
+  * post gcc-5 rebuild with gnuradio 3.7.8-3 (Closes: #791060)
+
+ -- A. Maitland Bottoms <bottoms@debian.org>  Sat, 12 Sep 2015 21:45:22 -0400
+
+gr-fcdproplus (3.7.24.cf5db38-2) unstable; urgency=low
+
+  * update hid code for kFreeBSD case.
+
+ -- A. Maitland Bottoms <bottoms@debian.org>  Sun, 16 Aug 2015 16:11:03 -0400
+
+gr-fcdproplus (3.7.24.cf5db38-1) unstable; urgency=low
+
+  * New upstream with_hidapi-10-gcf5db38
+    24 patches after v3.7 tag
+
+ -- A. Maitland Bottoms <bottoms@debian.org>  Sat, 15 Aug 2015 23:54:00 -0400
+
+gr-fcdproplus (3.7.11-3) unstable; urgency=low
+
+  * include Version in pkg-config pc file. (Closes: #759510)
+
+ -- A. Maitland Bottoms <bottoms@debian.org>  Wed, 03 Sep 2014 16:27:13 -0400
+
+gr-fcdproplus (3.7.11-2) unstable; urgency=low
+
+  * build with gnuradio 3.7.5
+
+ -- A. Maitland Bottoms <bottoms@debian.org>  Wed, 03 Sep 2014 01:50:28 -0400
+
+gr-fcdproplus (3.7.11-1) unstable; urgency=low
+
+  * Use version 3.7.11 for v3.7_hidraw-11-g1edbe52 (Closes: #757360)
+
+ -- A. Maitland Bottoms <bottoms@debian.org>  Wed, 27 Aug 2014 01:26:32 -0400
+
+gr-fcdproplus (0.0.1.2.1edbe52-2) unstable; urgency=low
+
+  * kFreeBSD build fix for freebsd-libs 10.0-5 which has
+  libusb_get_string_descriptor
+
+ -- A. Maitland Bottoms <bottoms@debian.org>  Sat, 19 Apr 2014 18:33:52 -0400
+
+gr-fcdproplus (0.0.1.2.1edbe52-1) unstable; urgency=low
+
+  * Update to v3.7_hidraw-11-g1edbe52
+
+ -- A. Maitland Bottoms <bottoms@debian.org>  Fri, 18 Apr 2014 21:18:23 -0400
+
+gr-fcdproplus (0.0.1.1.2c80be-3~bpo70+1) wheezy-backports; urgency=low
+
+  * Rebuild for wheezy-backports.
+
+ -- A. Maitland Bottoms <bottoms@debian.org>  Sat, 01 Feb 2014 21:42:44 -0500
+
+gr-fcdproplus (0.0.1.1.2c80be-3) unstable; urgency=low
+
+  * Recommend udev
+
+ -- A. Maitland Bottoms <bottoms@debian.org>  Wed, 01 Jan 2014 11:44:43 -0500
+
+gr-fcdproplus (0.0.1.1.2c80be-2) unstable; urgency=low
+
+  * Try kFreeBSD support
+
+ -- A. Maitland Bottoms <bottoms@debian.org>  Sun, 29 Dec 2013 09:43:37 -0500
+
+gr-fcdproplus (0.0.1.1.2c80be-1) unstable; urgency=low
+
+  * New upstream (Closes: #725842)
+  * Upstream does not yet set a soversion, so Debian package will start from 0.
+
+ -- A. Maitland Bottoms <bottoms@petros.rf.org>  Mon, 02 Dec 2013 12:33:26 -0500
