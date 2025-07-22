@@ -1,0 +1,4 @@
+version=4
+opts="filenamemangle=s%(?:.*?)?v?(\d[\d.]*)\.tar\.gz%gr-funcube_$1.orig.tar.gz%,uversionmangle=s/.(beta|rc)/~$1/" \
+ https://github.com/dl1ksv/gr-funcube/tags \
+ (?:.*?/)?v?(\d.*)\.tar\.gz debian uupdate

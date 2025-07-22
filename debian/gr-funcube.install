@@ -1,0 +1,7 @@
+usr/lib/*/libgnuradio-funcube.so
+usr/include
+usr/lib/python*
+usr/share/gnuradio
+debian/dl1ksv.gr-funcube.metainfo.xml usr/share/metainfo
+usr/lib/*/cmake
+usr/share/doc/gr-funcube/html

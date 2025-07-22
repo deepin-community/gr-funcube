@@ -1,0 +1,23 @@
+Author: A. Maitland Bottoms <bottoms@debian.org>
+Forwarded: not-needed
+Description: gr-cmake-path
+ Place CMake helper files in same place as gnuradio.
+
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -107,7 +107,7 @@
+ endif(NOT CMAKE_MODULES_DIR)
+ 
+ set(GR_INCLUDE_DIR      include/funcube)
+-set(GR_CMAKE_DIR        ${CMAKE_MODULES_DIR}/funcube)
++set(GR_CMAKE_DIR        ${CMAKE_MODULES_DIR}/gnuradio)
+ set(GR_PKG_DATA_DIR     ${GR_DATA_DIR}/${CMAKE_PROJECT_NAME})
+ set(GR_PKG_DOC_DIR      ${GR_DOC_DIR}/${CMAKE_PROJECT_NAME})
+ set(GR_PKG_CONF_DIR     ${GR_CONF_DIR}/${CMAKE_PROJECT_NAME}/conf.d)
+@@ -184,5 +184,5 @@
+ ########################################################################
+ 
+ install(FILES cmake/Modules/funcubeConfig.cmake
+-    DESTINATION ${CMAKE_MODULES_DIR}/funcube
++    DESTINATION ${CMAKE_MODULES_DIR}/gnuradio
+ )
